@@ -46,6 +46,8 @@ func epochToLocal(epochtime int) time.Time {
 	localtime := time.Unix(int64(epochtime), 0)
 	return localtime
 }
+
+// Get slack token from env file.
 func viperEnvVariable(key string) string {
 
 	// SetConfigFile explicitly defines the path, name and extension of the config file.
